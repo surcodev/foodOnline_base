@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
 
     'accounts',
     'vendor',
@@ -49,6 +50,10 @@ INSTALLED_APPS = [
     'customers',
     'orders',
 ]
+
+GRAPH_MODELS = {
+  'app_labels': ["accounts", "vendor", "menu", "marketplace", "customers", "orders"],
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
